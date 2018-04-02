@@ -1,0 +1,43 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {% include 'admin/nav.html.twig' %}
+        <div class="p-2">
+            {{ form(form) }}
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ссылка</th>
+                <th scope="col">Шаблон</th>
+                <th scope="col">Стиль</th>
+                <th scope="col">Управление</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for block in blocks %}
+                <tr>
+                    <th scope="row">{{ loop.index }}</th>
+                    <td><a href="http://f1.sborislav.xyz/{{ block.link }}">{{ block.link }}</a></td>
+                    <td>{{ block.template }}</td>
+                    <td>{{ block.style }}</td>
+                    <td>
+                        <div class="btn-group" role="group" >
+                            <form method="post">
+                                <input type="hidden" name="id" value="{{ block.id }}">
+                                <button type="submit" name="delete" class="btn btn-warning">Удалить</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

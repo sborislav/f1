@@ -1,0 +1,323 @@
+.no-js .calc-warning {
+	background: rgb(255, 229, 230); margin: 1.5em auto; padding: 1.5em; border-radius: 0.3em; border: 1px solid rgb(190, 150, 147); border-image: none; width: 60%; text-align: center; color: rgb(102, 0, 0); font-weight: 700; display: block; box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+.calc {
+	padding: 0.5em 0px; font-size: 11pt; font-weight: 400; margin-top: 1em; position: relative; min-width: 668px; box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.calc * {
+	margin: 0px; padding: 0px; color: #09B250; font-size: 20px;
+}
+.calc h3 {
+	margin: 0.7em 0px 0px; color: rgb(64, 63, 63); line-height: 1.1em; font-size: 20px; font-weight: 400; position: relative; z-index: 1;
+}
+.calc h3 span {
+	margin-top: 0.4em; display: block;
+}
+.calc h3 span.price {
+	font-size: 1.5em;
+}
+.calc input {
+	border-width: 1px; border-style: solid; border-color: rgb(153, 153, 153) rgb(204, 204, 204) rgb(238, 238, 238); padding: 0.3em 0.4em; border-radius: 0.25em;
+}
+.calc .footer {
+	margin: auto 1em; text-align: center;
+}
+.calc .param {
+	background: rgb(236, 236, 237); border-width: 1px; border-style: solid; border-color: rgb(250, 250, 250) silver rgb(208, 208, 208) rgb(250, 250, 250); padding: 42px 10px 43px 8px; border-radius: 0.25em; border-image: none; width: 481px;
+}
+.calc .param .slider {
+	margin: auto 1em;
+}
+.calc .param .tariff {
+	margin: auto 1em;
+}
+.calc .param .footer {
+	margin: auto 1em;
+}
+.calc .param .slider::before {
+	margin-bottom: 2px; display: block; content: "";
+}
+.calc .param .tariff::before {
+	margin-bottom: 2px; display: block; content: "";
+}
+.calc .param .footer::before {
+	margin-bottom: 2px; display: block; content: "";
+}
+.calc .param .desktop::before {
+	margin-bottom: 0.2em;
+}
+.calc .param .footer {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.calc .param .slider label {
+	text-align: left; line-height: 1em; font-size: 1.2em; font-weight: 700; margin-bottom: 0.7em; display: block;
+}
+.calc .param .tariff h3 {
+	text-align: left; line-height: 1em; font-size: 1.2em; font-weight: 700; margin-bottom: 0.7em; display: block;
+}
+.calc .param .slider {
+	padding-right: 90px; padding-bottom: 46px; position: relative;
+}
+.calc .param .slider::before {
+	margin-right: -60px;
+}
+.calc .param .slider input {
+	padding: 0px; top: 47%; width: 69px; height: 2em; text-align: center; right: 0px; color: rgb(121, 121, 121); line-height: 2em; font-size: 25px; font-weight: 400; margin-top: -1em; display: block; position: absolute; box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
+}
+.calc .result {
+	margin: 0px; top: 0px; width: 454px; right: 0px; bottom: 0px; float: right; position: absolute;
+}
+.calc .result .footer {
+	margin: 0px; width: 100%; bottom: 0.2em; position: absolute;
+}
+.calc .result::after {
+	width: 100%; height: 150px; bottom: 7.5em; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; display: block; position: absolute; z-index: 0; content: "";
+}
+.calc .btncalck {
+	text-transform: uppercase; text-decoration: none;
+}
+.calc .profit {
+	margin: 0.1em auto; font-size: 25px; font-weight: 700;
+}
+.calc .profit span {
+	color: rgb(10, 104, 109); font-size: 35px;
+}
+.calc .profit .noprofit {
+	color: inherit; font-size: inherit; display: none;
+}
+.calc .no.profit .noprofit {
+	display: inline;
+}
+.calc .stack {
+	left: 50%; top: 0px; width: 50%; text-align: center; bottom: 117px; position: absolute;
+}
+.calc .stack h3 {
+	margin-top: 0.2em;
+}
+.calc :first-child.stack {
+	left: 0px;
+}
+.calc :first-child.stack::after {
+	margin-right: 0px; margin-left: 10%;
+}
+.calc .column {
+	list-style: none; margin: 0px 0px 0px -56px; padding: 0px; left: 50%; bottom: 0px; position: absolute;
+}
+.calc .tariff {
+	list-style: none; margin: 0px; padding: 0px 0px 1.2em; text-align: center;
+}
+.calc .tariff ul {
+	margin: 0px; padding: 0px;
+}
+.calc .tariff li {
+	width: 32%; text-align: center; font-size: 1.1em; display: inline-block;
+}
+.calc .tariff li#t_ud {
+	width: 28%;
+}
+.calc .tariff li#t_st {
+	width: 35%;
+}
+.calc .tariff li#t_unl {
+	width: 33%;
+}
+.calc .tariff li * {
+	vertical-align: middle;
+}
+.calc .tariff label {
+	border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dashed; display: inline-block; white-space: nowrap;
+}
+.calc .tariff label:hover {
+	cursor: pointer;
+}
+.calc .tariff .icon-help {
+	color: rgb(153, 153, 153); font-size: 0.9em; margin-top: -0.7em; margin-left: -0.2em; display: inline-block; text-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+}
+.calc .tariff label.checked:hover {
+	color: rgb(255, 255, 255); cursor: default;
+}
+.calc .tariff .icon-help:hover {
+	color: rgb(255, 224, 70); cursor: default;
+}
+.calc .tariff h3 span {
+	padding-right: 65px; display: inline;
+}
+.calc .part {
+	background: url("../img/gray-c.png") repeat-y bottom / 100%; width: 115px; position: relative; min-height: 10px;
+}
+.calc .part::before {
+	background: url("../img/gray-t.png") no-repeat top / 100% 19px; top: -8px; width: 115px; height: 19px; display: block; position: absolute; z-index: inherit; content: "";
+}
+.calc .part::after {
+	background: url("../img/gray-b.png") no-repeat bottom / 100% 8px; width: 115px; height: 8px; bottom: -8px; display: block; position: absolute; z-index: inherit; content: "";
+}
+.calc .yellow.part {
+	background-image: url("../img/yellow-c.png"); background-color: rgb(255, 224, 70);
+}
+.calc .yellow.part::before {
+	background-image: url("../img/yellow-t.png");
+}
+.calc .yellow.part::after {
+	background-image: url("../img/yellow-b.png");
+}
+.calc .blue.part {
+	background-image: url("../img/blue-c.png"); background-color: rgb(83, 146, 214);
+}
+.calc .blue.part::before {
+	background-image: url("../img/blue-t.png");
+}
+.calc .blue.part::after {
+	background-image: url("../img/blue-b.png");
+}
+.calc .gray.part {
+	background-image: url("../img/darkgray-c.png");
+}
+.calc .gray.part::before {
+	background-image: url("../img/darkgray-t.png");
+}
+.calc .gray.part::after {
+	background-image: url("../img/darkgray-b.png");
+}
+.calc .price {
+	padding-left: 0.25em; font-size: 25px; font-weight: 700;
+}
+#hint .price {
+	padding-left: 0.25em; font-size: 25px; font-weight: 700;
+}
+.calc .price::after {
+	text-transform: lowercase; font-weight: 700; display: inline-block; content: "\00A0 p.";
+}
+#hint .price::after {
+	text-transform: lowercase; font-weight: 700; display: inline-block; content: "\00A0 p.";
+}
+#hint dfn {
+	font-style: normal; font-weight: 700; margin-bottom: 0.3em; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+.no-js .calc {
+	display: none;
+}
+.calc-warning {
+	display: none;
+}
+.calc .help {
+	display: none;
+}
+.calc .no.profit .price {
+	display: none;
+}
+.calc .column li > span {
+	display: none;
+}
+.calc .footer a {
+	font-weight: 700;
+}
+.calc .footer button {
+	font-weight: 700;
+}
+#hint em {
+	font-weight: 700;
+}
+.calc .param :first-child.slider::before {
+	border: currentColor; border-image: none;
+}
+.calc .tariff label.checked {
+	border: currentColor; border-image: none;
+}
+.param .tariff {
+	display: none;
+}
+.param .footer {
+	display: none;
+}
+.result .footer .profit-info + p {
+	display: none;
+}
+.profit-info {
+	color: rgb(64, 63, 63); margin-top: 13px;
+}
+.profit-info p {
+	text-align: left; line-height: 13px; font-size: 13px; margin-bottom: 9px; display: block;
+}
+.profit-info p + p span {
+	margin: 0px -5px 0px 5px; line-height: 7px;
+}
+.profit-info span {
+	color: rgb(10, 104, 109); font-size: 40px; vertical-align: top; display: inline-block; min-width: 30px;
+}
+
+/**
+ * UI
+ */
+
+.calc .checked {
+    background: rgb(33, 83, 137); border-width: 1px; border-style: solid; border-color: rgb(104, 159, 219) rgb(33, 83, 137); padding: 0.3em 0.1em 0.2em 0.5em; border-radius: 0.3em; color: rgb(255, 255, 255); box-shadow: 0px 0px 0.2em rgba(50,50,50,0.5);
+}
+.calc .sld {
+    background: rgb(102, 102, 102); border-radius: 30em; height: 0.58em; position: relative;
+}
+.calc .sld .mark {
+    background: linear-gradient(rgba(48, 196, 201, 1) 0%, rgba(17, 137, 149, 1) 100%); border-radius: 30em; left: 0px; height: 100%; position: absolute;
+}
+.calc .sld .hand {
+    background: url("../codedir/handler.png") no-repeat center; width: 20px; height: 19px; position: absolute;
+}
+.calc .sld .label {
+    margin: 11px 0px 0px; color: rgb(51, 51, 51); font-size: 12px; font-weight: 700; text-decoration: none; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dashed; white-space: nowrap; position: absolute;
+}
+.calc .sld .val {
+    margin: 11px 0px 0px; color: rgb(51, 51, 51); font-size: 12px; font-weight: 700; text-decoration: none; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dashed; white-space: nowrap; position: absolute;
+}
+.calc .sld .label:hover {
+    color: rgb(121, 101, 0); border-bottom-color: rgb(121, 101, 0); border-bottom-style: solid;
+}
+.calc .sld .val {
+    top: -1.3em;
+}
+.calc .btncalck {
+    margin: 0.2em; padding: 0.4em 1em 0.3em; border-radius: 1.6em; border: 1px solid rgb(212, 212, 212); border-image: none; text-align: center; color: rgb(51, 51, 51); line-height: normal !important; overflow: visible; font-family: inherit; font-size: 0.9em; font-style: inherit; font-variant: inherit; font-weight: inherit; vertical-align: middle; display: inline-block; cursor: pointer; box-sizing: border-box; font-size-adjust: inherit; font-stretch: inherit; box-shadow: 0px 0px 0.15em rgba(50,50,50,0.5); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.calc .btncalck-primary {
+    margin: 0.2em; padding: 0.4em 1em 0.3em; border-radius: 1.6em; border: 1px solid rgb(212, 212, 212); border-image: none; text-align: center; color: rgb(51, 51, 51); line-height: normal !important; overflow: visible; font-family: inherit; font-size: 0.9em; font-style: inherit; font-variant: inherit; font-weight: inherit; vertical-align: middle; display: inline-block; cursor: pointer; box-sizing: border-box; font-size-adjust: inherit; font-stretch: inherit; box-shadow: 0px 0px 0.15em rgba(50,50,50,0.5); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.calc .btncalck-secondary {
+    margin: 0.2em; padding: 0.4em 1em 0.3em; border-radius: 1.6em; border: 1px solid rgb(212, 212, 212); border-image: none; text-align: center; color: rgb(51, 51, 51); line-height: normal !important; overflow: visible; font-family: inherit; font-size: 0.9em; font-style: inherit; font-variant: inherit; font-weight: inherit; vertical-align: middle; display: inline-block; cursor: pointer; box-sizing: border-box; font-size-adjust: inherit; font-stretch: inherit; box-shadow: 0px 0px 0.15em rgba(50,50,50,0.5); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.calc .btncalck-alert {
+    margin: 0.2em; padding: 0.4em 1em 0.3em; border-radius: 1.6em; border: 1px solid rgb(212, 212, 212); border-image: none; text-align: center; color: rgb(51, 51, 51); line-height: normal !important; overflow: visible; font-family: inherit; font-size: 0.9em; font-style: inherit; font-variant: inherit; font-weight: inherit; vertical-align: middle; display: inline-block; cursor: pointer; box-sizing: border-box; font-size-adjust: inherit; font-stretch: inherit; box-shadow: 0px 0px 0.15em rgba(50,50,50,0.5); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.calc .btncalck {
+    background: rgb(255, 255, 255);
+}
+.calc .btncalck:hover {
+    background: rgb(255, 255, 255);
+}
+.calc .btncalck:active {
+    background: rgb(225, 225, 225);
+}
+.calc .btncalck-primary {
+    background: rgb(255, 227, 128); border-color: rgb(230, 179, 0); padding: 0.8em 2em 0.7em; color: rgb(0, 0, 0); font-size: 1.1em;
+}
+.calc .btncalck-primary:hover {
+    background: rgb(255, 230, 143);
+}
+.calc .btncalck-primary:active {
+    background: rgb(255, 199, 0);
+}
+.calc .btncalck-secondary {
+    background: rgb(255, 253, 239); border-color: rgb(255, 244, 153);
+}
+.calc .btncalck-secondary:hover {
+    background: rgb(255, 255, 255);
+}
+.calc .btncalck-secondary:active {
+    background: rgb(255, 247, 178);
+}
+.calc .btncalck-alert {
+    background: rgb(185, 203, 98); border-color: rgb(143, 161, 54);
+}
+.calc .btncalck-alert:hover {
+    background: rgb(191, 207, 110);
+}
+.calc .btncalck-alert:active {
+    background: rgb(160, 180, 60);
+}

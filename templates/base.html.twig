@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Сайт!{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Тестовое задание">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/calc.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ path('css') }}">
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    {% for block in blocks %}
+        {% set foo = 'index/'~block.template~'.html.twig' %}
+        {% include foo  %}
+    {% endfor %}
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" id="consultation" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="top: 50%;margin-top: -85px;">
+            <div class="modal-content p-2">
+                <h4 class="text-dark">Заказать обратный звонок</h4>
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="phone" class="form-control" placeholder="Номер телефона">
+                </div>
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/ui.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/calc-param.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery.calc.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/vendor/jquery.maskedinput.min.js') }}"></script>
+{% endblock %}
+</body>
+</html>

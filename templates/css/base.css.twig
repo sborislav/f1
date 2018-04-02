@@ -1,0 +1,4 @@
+{% for block in blocks %}
+{% set foo = 'css/'~block.style~'.css.twig' %}
+{% include foo  %}
+{% endfor %}
